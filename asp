@@ -311,13 +311,13 @@
             <h2 style="border:none; padding:0; text-align:center;">Begin Your Quest</h2>
            
             <!-- FOR VOLUNTEERS -->
-            <a href="YOUR_VOLUNTEER_FORM_LINK" class="portal-item">
+            <a href="https://docs.google.com/forms/d/1LKdl2cTrpivDbljjyWN4Nm9sJ8gB2AbXCAZzQhuKERM/edit" class="portal-item">
                 <h3>Enter as a Seeker</h3>
                 <p>For Builders & Leaders. Join the 2-day sensitization quest. Experience the truth. Become a Certified Ally.</p>
             </a>
 
             <!-- FOR STUDENTS -->
-            <a href="YOUR_STUDENT_FORM_LINK" class="portal-item">
+            <a href="https://docs.google.com/forms/d/1q2PX-P0DRVkzGJXwKQHcA8KiPtw0Em6XgasNNEIfsIQ/edit" class="portal-item">
                 <h3>Enter as a Guide</h3>
                 <p>For Students with Disabilities. Share your superpower. Lead our global sessions. Get Professionally Certified.</p>
             </a>
@@ -341,10 +341,10 @@
             <p style="font-size: 1.3rem; opacity: 0.8;">Building a world where everyone belongs.</p>
            
             <nav class="social-row" aria-label="Social Media Links">
-                <a href="https://facebook.com/your-page" class="social-link" target="_blank" rel="noopener">Facebook</a>
-                <a href="https://linkedin.com/company/your-page" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
-                <a href="https://instagram.com/your-page" class="social-link" target="_blank" rel="noopener">Instagram</a>
-                <a href="https://youtube.com/c/your-channel" class="social-link" target="_blank" rel="noopener">YouTube</a>
+                <a href="https://www.facebook.com/profile.php?id=61577241000762" class="social-link" target="_blank" rel="noopener">Facebook</a>
+                <a href="https://www.linkedin.com/company/107498592/admin/dashboard/" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="instagram.com/challengedaspiredprofessional?igsh=aXh6dGduNjc1NXhl&" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://studio.youtube.com/channel/UCO_WhdlHiI6N1T9OUWC3oyg" target="_blank" rel="noopener">YouTube</a>
             </nav>
 
             <div class="legal">
