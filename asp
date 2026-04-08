@@ -4,216 +4,259 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
-    <!-- GLOBAL SEO & EMOTIONAL IMPACT -->
-    <title>Open Worlds | CAP Technologies Solutions</title>
+    <!-- WORLD-CLASS SEO & EMOTIONAL IMPACT -->
+    <title>Open Worlds | CAP Technologies Solutions - Accessibility Sensitization</title>
     <meta name="description" content="Build a world where everyone belongs. Experience accessibility through real human connection. A professional impact ecosystem by CAP Technologies Solutions.">
+    <meta name="theme-color" content="#000000">
    
+    <!-- SOCIAL PREVIEW (Open Graph) -->
+    <meta property="og:title" content="Open Worlds: Accessibility through Connection">
+    <meta property="og:description" content="Build a world where everyone belongs. Experience accessibility through real human connection.">
+    <meta property="og:type" content="website">
+
     <style>
-        /* GLOBAL DESIGN SYSTEM
-           - High Contrast for Visual Clarity (Black, White, Solar Yellow)
-           - Simple Spacing for Cognitive Ease (Neuro-friendly)
-           - Large, Accessible Fonts
-        */
+        /* DESIGN SYSTEM: HIGH CONTRAST & COGNITIVE EASE */
         :root {
-            --pure-black: #000000;
-            --pure-white: #FFFFFF;
-            --warm-yellow: #FFD200;
-            --soft-gray: #F4F4F4;
-            --focus-blue: #0056b3;
-            --deep-gray: #333333;
+            --obsidian: #000000;
+            --solar: #FFD200; /* High Visibility Yellow */
+            --white: #FFFFFF;
+            --soft-gray: #F8F9FA;
+            --accent-blue: #0066CC;
+            --text-muted: #555555;
         }
 
-        /* Accessibility: Skip Link */
+        /* Essential Accessibility: Skip to Content */
         .skip-link {
             position: absolute;
             top: -100px;
             left: 10px;
-            background: var(--warm-yellow);
-            color: var(--pure-black);
-            padding: 1.5rem;
+            background: var(--solar);
+            color: var(--obsidian);
+            padding: 1.25rem;
             z-index: 9999;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 900;
+            border: 2px solid var(--obsidian);
         }
         .skip-link:focus { top: 10px; }
 
         body {
-            font-family: system-ui, -apple-system, sans-serif;
-            background-color: var(--pure-white);
-            color: var(--pure-black);
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--white);
+            color: var(--obsidian);
             margin: 0;
             padding: 0;
-            line-height: 1.7;
+            line-height: 1.8;
+            scroll-behavior: smooth;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 850px;
             margin: 0 auto;
             padding: 0 1.5rem;
         }
 
-        /* SIMPLE HEADER */
+        /* HEADER */
         header {
-            padding: 4rem 0 2rem 0;
+            padding: 5rem 0 3rem 0;
             text-align: center;
-            border-bottom: 12px solid var(--warm-yellow);
+            border-bottom: 12px solid var(--obsidian);
+            background-color: var(--solar);
         }
 
-        .company-name {
-            font-weight: 700;
+        .company-id {
+            font-weight: 800;
             text-transform: uppercase;
-            letter-spacing: 3px;
-            font-size: 0.9rem;
-            color: var(--deep-gray);
-            margin-bottom: 1rem;
+            letter-spacing: 4px;
+            font-size: 0.85rem;
+            color: var(--obsidian);
+            margin-bottom: 0.5rem;
+            opacity: 0.8;
         }
 
         h1 {
-            font-size: clamp(2.8rem, 9vw, 4.5rem);
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
             margin: 0;
             font-weight: 900;
             line-height: 1;
-            letter-spacing: -1px;
+            letter-spacing: -2px;
+            color: var(--obsidian);
         }
 
-        /* EMOTIONAL HERO */
-        .hero-banner {
-            background-color: var(--warm-yellow);
+        /* THE HOOK */
+        .hero-statement {
+            background-color: var(--obsidian);
+            color: var(--white);
             padding: 4rem 0;
             text-align: center;
             font-size: clamp(1.4rem, 4vw, 2.2rem);
             font-weight: 800;
             line-height: 1.2;
+            border-bottom: 8px solid var(--solar);
         }
 
-        /* CONTENT SECTIONS */
-        main {
-            padding: 4rem 0;
-        }
-
-        section {
-            margin-bottom: 6rem;
-        }
+        /* MAIN CONTENT */
+        main { padding: 4rem 0; }
+        section { margin-bottom: 7rem; }
 
         h2 {
             font-size: 2.5rem;
             margin-bottom: 2rem;
-            border-left: 15px solid var(--warm-yellow);
+            border-left: 15px solid var(--solar);
             padding-left: 1.5rem;
-            color: var(--pure-black);
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            color: var(--obsidian);
         }
 
-        .box {
+        .content-card {
             background: var(--soft-gray);
-            padding: 2.5rem;
+            padding: 3rem;
             border-radius: 20px;
-            margin-bottom: 2rem;
-            border: 2px solid #ddd;
+            margin-bottom: 2.5rem;
+            border: 2px solid #EEE;
+            box-shadow: 0 4px 0 #DDD;
         }
 
-        .box h3 {
-            margin-top: 0;
-            font-size: 1.8rem;
-            color: var(--focus-blue);
+        .content-card p {
+            font-size: 1.35rem;
+            margin: 0;
+            color: #111;
         }
 
-        .box p {
-            font-size: 1.25rem;
-            margin-bottom: 0;
-        }
-
-        /* OUTCOMES LIST */
-        .results-list {
+        /* OUTCOMES */
+        .outcomes-list {
             list-style: none;
             padding: 0;
         }
 
-        .results-list li {
-            font-size: 1.3rem;
+        .outcomes-list li {
+            font-size: 1.45rem;
             margin-bottom: 1.5rem;
-            padding-left: 2.5rem;
+            padding-left: 3.5rem;
             position: relative;
+            font-weight: 600;
         }
 
-        .results-list li::before {
+        .outcomes-list li::before {
             content: "✔";
             position: absolute;
             left: 0;
-            color: #28a745;
-            font-weight: bold;
-            font-size: 1.5rem;
+            color: var(--obsidian);
+            background: var(--solar);
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            font-weight: 900;
+            font-size: 1.1rem;
         }
 
-        /* ACTION CARDS */
-        .actions {
-            display: flex;
-            flex-direction: column;
+        /* PORTAL LINKS */
+        .portal-grid {
+            display: grid;
+            grid-template-columns: 1fr;
             gap: 2rem;
             margin-top: 4rem;
         }
 
-        .btn-card {
-            background: var(--pure-black);
-            color: var(--pure-white);
-            padding: 3rem;
+        .portal-item {
+            background: var(--obsidian);
+            color: var(--white);
+            padding: 3.5rem;
             text-decoration: none;
             border-radius: 25px;
-            transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             text-align: center;
-            border: 4px solid transparent;
+            border: 6px solid transparent;
+            transition: 0.3s cubic-bezier(0.19, 1, 0.22, 1);
         }
 
-        .btn-card:hover, .btn-card:focus {
-            background: #1a1a1a;
+        .portal-item:hover, .portal-item:focus {
             transform: scale(1.02);
-            border-color: var(--warm-yellow);
-            outline: 6px solid var(--focus-blue);
-            outline-offset: 6px;
+            border-color: var(--solar);
+            outline: 6px solid var(--accent-blue);
+            outline-offset: 8px;
         }
 
-        .btn-card h3 {
-            font-size: 2.2rem;
+        .portal-item h3 {
+            font-size: 2.6rem;
             margin: 0 0 15px 0;
-            color: var(--warm-yellow);
+            color: var(--solar);
+            text-transform: uppercase;
         }
 
-        .btn-card p {
-            font-size: 1.2rem;
+        .portal-item p {
+            font-size: 1.25rem;
+            opacity: 0.85;
             margin: 0;
-            opacity: 0.9;
         }
 
-        /* FOOTER & PRIVACY */
-        .footer-info {
-            background: var(--soft-gray);
+        /* PRIVACY PACT */
+        .pact-container {
+            background: #F0F0F0;
             padding: 5rem 0;
-            margin-top: 5rem;
-            border-top: 1px solid #ddd;
+            border-top: 2px solid #DDD;
         }
 
-        .privacy-pact {
-            font-size: 1.1rem;
-            color: var(--deep-gray);
-            max-width: 600px;
+        .privacy-text {
+            max-width: 650px;
+            margin: 0 auto;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            line-height: 1.6;
         }
 
+        /* FOOTER & SOCIALS */
         footer {
             padding: 6rem 0;
+            background: var(--obsidian);
+            color: var(--white);
             text-align: center;
-            background: var(--pure-black);
-            color: var(--pure-white);
         }
 
-        /* FOCUS STATES */
+        .social-row {
+            display: flex;
+            justify-content: center;
+            gap: 3.5rem;
+            margin: 4rem 0;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            color: var(--solar);
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding-bottom: 5px;
+            border-bottom: 3px solid transparent;
+            transition: 0.2s ease;
+        }
+
+        .social-link:hover { border-color: var(--solar); }
+
+        footer .legal {
+            margin-top: 4rem;
+            font-size: 0.9rem;
+            opacity: 0.4;
+            letter-spacing: 1px;
+        }
+
+        /* FOCUS INDICATORS */
         *:focus {
-            outline: 5px solid var(--focus-blue);
-            outline-offset: 5px;
+            outline: 6px solid var(--accent-blue);
+            outline-offset: 4px;
         }
 
         @media (max-width: 600px) {
-            h1 { font-size: 2.5rem; }
-            h2 { font-size: 2rem; }
-            .btn-card { padding: 2rem; }
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.8rem; }
+            .portal-item { padding: 2.5rem; }
+            .social-row { gap: 1.5rem; }
         }
     </style>
 </head>
@@ -223,88 +266,91 @@
 
     <header>
         <div class="container">
-            <div class="company-name">CAP Technologies Solutions</div>
+            <div class="company-id">A CAP Technologies Solutions Initiative</div>
             <h1>Open Worlds</h1>
         </div>
     </header>
 
-    <div class="hero-banner">
+    <div class="hero-statement">
         <div class="container">
-            "Experience the world through the eyes of others. Build a bridge that stays open for everyone."
+            "Experience accessibility through the eyes of real experts. No checklists. No barriers. Just human connection."
         </div>
     </div>
 
     <main id="main-content" class="container">
        
-        <!-- WHAT WE DO -->
-        <section>
-            <h2>What We Do</h2>
-            <div class="box">
-                <p>We move beyond technical checklists. We connect <strong>Developers and Designers</strong> directly with <strong>Students with Disabilities</strong>. We host 2-day weekend sensitization sessions where real human stories teach you how to build a world with no walls.</p>
+        <!-- SECTION: WHAT WE DO -->
+        <section aria-labelledby="heading-what">
+            <h2 id="heading-what">What We Do</h2>
+            <div class="content-card">
+                <p>We connect <strong>Designers, Developers, and Industry Leaders</strong> directly with <strong>Experts with Lived Experience</strong>. Through our curated weekend sensitization quests, we turn abstract accessibility rules into powerful, human-centered design conversations.</p>
             </div>
         </section>
 
-        <!-- WHY WE DO IT -->
-        <section>
-            <h2>Why We Do It</h2>
-            <div class="box">
-                <p>Because sympathy isn't enough. We do it to shift the world from <strong>Pity to Empathy</strong>. We do it to ensure that people with disabilities are not just users of technology, but the <strong>leaders and teachers</strong> who shape it. We do it to create jobs, confidence, and a more human digital future.</p>
+        <!-- SECTION: WHY WE DO IT -->
+        <section aria-labelledby="heading-why">
+            <h2 id="heading-why">Why We Do It</h2>
+            <div class="content-card">
+                <p>Because sympathy doesn't build inclusive software. We move the industry from <strong>Pity to Professional Empathy</strong>. We empower students with disabilities to lead as the teachers of the future, ensuring they shape the digital world they live in.</p>
             </div>
         </section>
 
-        <!-- WHAT YOU GET / RESULTS -->
-        <section>
-            <h2>What You Get</h2>
-            <ul class="results-list">
-                <li><strong>Mindset Shift:</strong> A global perspective on inclusive design.</li>
-                <li><strong>Professional Growth:</strong> High-value skills for modern tech careers.</li>
-                <li><strong>Certification:</strong> A CAP-recognized Ally or Trainer Certificate.</li>
-                <li><strong>Human Connection:</strong> Real stories, real sessions, real impact.</li>
+        <!-- SECTION: OUTCOMES -->
+        <section aria-labelledby="heading-outcomes">
+            <h2 id="heading-outcomes">The Outcomes</h2>
+            <ul class="outcomes-list">
+                <li>Inclusive products that work for everyone, by default.</li>
+                <li>High-value teaching careers for students with disabilities.</li>
+                <li>Industry-recognized Ally and Trainer Certifications.</li>
+                <li>A global standard for design led by real human stories.</li>
             </ul>
         </section>
 
-        <!-- OUTCOMES -->
-        <section>
-            <h2>The Results</h2>
-            <div class="box" style="background: #eef2f7;">
-                <h3>Measurable Impact</h3>
-                <p>Inclusive products that work for everyone. Professional employment for students with disabilities. A growing community of accessibility evangelists leading the industry toward a global standard of inclusion.</p>
-            </div>
-        </section>
-
-        <!-- START YOUR JOURNEY -->
-        <section class="actions">
-            <h2>Start Your Journey</h2>
-
-            <!-- VOLUNTEERS -->
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd4rTZNACx8vXqhEgOJ-t--7O-0bdNxx0-zTXHTqts7KakUBA/viewform?usp=publish-editor" class="btn-card">
-                <h3>Join as a Seeker</h3>
-                <p>For Designers, Devs, & Allies. Learn the truth about inclusion in our weekend quest.</p>
+        <!-- SECTION: ACTION PORTALS -->
+        <section class="portal-grid" aria-label="Registration Options">
+            <h2 style="border:none; padding:0; text-align:center;">Begin Your Quest</h2>
+           
+            <!-- FOR VOLUNTEERS -->
+            <a href="YOUR_VOLUNTEER_FORM_LINK" class="portal-item">
+                <h3>Enter as a Seeker</h3>
+                <p>For Builders & Leaders. Join the 2-day sensitization quest. Experience the truth. Become a Certified Ally.</p>
             </a>
 
-            <!-- STUDENTS -->
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSccLesB7_5OFeGucihQrGDiqljrk73at7FAGqdoqkRFM4IaXg/viewform?usp=publish-editor" class="btn-card">
-                <h3>Join as a Guide</h3>
-                <p>For Students with Disabilities. Share your superpower. Lead our sessions. Earn your leadership certificate.</p>
+            <!-- FOR STUDENTS -->
+            <a href="YOUR_STUDENT_FORM_LINK" class="portal-item">
+                <h3>Enter as a Guide</h3>
+                <p>For Students with Disabilities. Share your superpower. Lead our global sessions. Get Professionally Certified.</p>
             </a>
         </section>
 
     </main>
 
-    <div class="footer-info">
+    <!-- DATA INTEGRITY & PRIVACY -->
+    <aside class="pact-container">
         <div class="container">
-            <h2>The Privacy Pact</h2>
-            <p class="privacy-pact">
-                <strong>We Value Your Trust.</strong> Your information is used only to manage your journey in the ASP program. We never sell your data. We store it in a secure company ecosystem. You have the right to delete your data at any time. Honest, clear, and safe.
-            </p>
+            <h2 style="border-left:none; padding:0; text-align:center; font-size:1.8rem;">The Privacy Pact</h2>
+            <div class="privacy-text">
+                <strong>Your Trust is Our Standard.</strong> All data collected is used strictly to coordinate your journey in the ASP program. We never sell your identity. Your information is stored within our secure, private company ecosystem. You maintain the absolute right to view or delete your data at any time.
+            </div>
         </div>
-    </div>
+    </aside>
 
     <footer>
         <div class="container">
-            <p style="font-size: 2rem; font-weight: 900; letter-spacing: 2px;">CAP TECHNOLOGIES SOLUTIONS</p>
-            <p style="margin-top: 10px; font-size: 1.2rem;">Building a world where everyone belongs.</p>
-            <p style="margin-top: 3rem; font-size: 0.9rem; opacity: 0.4;">&copy; 2024. Designed for Human Connection.</p>
+            <p style="font-size: 2.2rem; font-weight: 900; letter-spacing: 5px; margin-bottom: 10px;">CAP TECHNOLOGIES SOLUTIONS</p>
+            <p style="font-size: 1.3rem; opacity: 0.8;">Building a world where everyone belongs.</p>
+           
+            <nav class="social-row" aria-label="Social Media Links">
+                <a href="https://facebook.com/your-page" class="social-link" target="_blank" rel="noopener">Facebook</a>
+                <a href="https://linkedin.com/company/your-page" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://instagram.com/your-page" class="social-link" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://youtube.com/c/your-channel" class="social-link" target="_blank" rel="noopener">YouTube</a>
+            </nav>
+
+            <div class="legal">
+                &copy; 2024 CAP Technologies Solutions. <br>
+                Global Accessibility Standards & Human Connection Hub.
+            </div>
         </div>
     </footer>
 
